@@ -3,7 +3,7 @@ package aa;
 /**
  * @author davsan03
  */
-public class Aa {
+public class Test1 {
         /**
      * Método multiplica que multiplica a por b
      * @param a La primera variable usada en multiplicación
