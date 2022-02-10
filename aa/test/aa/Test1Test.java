@@ -65,5 +65,17 @@ public class Test1Test {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+ 
+      @Test(timeout=1)
+    public void testMultiplicaTimeOut() {
+        System.out.println("multiplica");
+        int a = 15000;
+        int b = 15000;
+        Test1 instance = new Test1();
+        int expResult = 0;
+        int result = instance.multiplica(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
 }
