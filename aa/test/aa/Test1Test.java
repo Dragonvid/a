@@ -65,17 +65,46 @@ public class Test1Test {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
- 
+     /**
+     * Test of multiplica method, of class Test1.
+     * He puesto un timeout de 1 ms y las variables a, b asignarles un valor de 15000
+     */
       @Test(timeout=1)
     public void testMultiplicaTimeOut() {
         System.out.println("multiplica");
         int a = 15000;
         int b = 15000;
         Test1 instance = new Test1();
-        int expResult = 0;
+        //int expResult = 0;
         int result = instance.multiplica(a, b);
-        assertEquals(expResult, result);
+        //assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of factorial method, of class Test1.
+     */
+    @Test
+    public void testFactorial() {
+        System.out.println("factorial");
+        int numero = 0;
+        Test1 instance = new Test1();
+        int expResult = 0;
+        int result = instance.factorial(numero);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+       // fail("The test case is a prototype.");
+    }
+        @Test (expected=IllegalArgumentException.class)
+    public void testFactorialNegativo() {
+        System.out.println("factorial");
+        int numero = 0;
+        Test1 instance = new Test1();
+        int expResult = 0;
+        int result = instance.factorial(numero);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+       // fail("The test case is a prototype.");
     }
 }
